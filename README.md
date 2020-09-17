@@ -9,4 +9,4 @@ So far there are demos for:
     Singleton
     Factory
 
-
+NOTE that the Observer an Observable classes were deprecated at Java 9.  The recommended way to implement the Observer pattern is now to use a PropertyChangeSupport instance.  A new demo has been added to show this called "PropertyChangeSupportDemo".
