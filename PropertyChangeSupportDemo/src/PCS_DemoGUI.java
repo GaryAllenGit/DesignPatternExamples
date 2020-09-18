@@ -15,8 +15,9 @@ public class PCS_DemoGUI extends javax.swing.JFrame implements Runnable, Propert
 	}
 
 	public PCS_DemoGUI(PCS_SharedString initialSharedText) {
-		// initialise the shared string and add 'this' GUI as an observer to it
+		// initialise the shared string and add 'this' GUI as a listener (observer) to it
 		sharedText = initialSharedText;
+		sharedText.addPropertyChangeListener(this);
 
 		initGUI();
 		updateSharedTextTF(sharedText.getTheString());
